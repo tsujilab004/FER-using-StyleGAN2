@@ -16,27 +16,27 @@
 ## 📅 B. 8週間スケジュール（タスク別）
 
 ### 🕐 Week 1 — セットアップ・再現性基盤
-- [✓] AffectNet-HQ（7:1:2 split）の前処理統一（リサイズ・正規化・ラベルマップ）
+- [x] AffectNet-HQ（7:1:2 split）の前処理統一（リサイズ・正規化・ラベルマップ）
 - [ ] ResEmoteNet リポジトリをクローン・依存関係整備  
-  - [ ] GitHub実装の動作確認（デモスクリプト実行）
-  - [ ] 自データセットへの入力適合（同一前処理）
-- [ ] 既存CNN / Transformer / SVM の再訓練とログ確認（seed固定）
-- [ ] baseline（CNN=0.6364 / Transformer=0.6309 / SVM=0.65）を保存
+  - [x] GitHub実装の動作確認（デモスクリプト実行）
+  - [x] 自データセットへの入力適合（同一前処理）
+- [x] 既存CNN / Transformer / SVM の再訓練とログ確認（seed固定）
+- [x] baseline（CNN=0.6364 / Transformer=0.6309 / SVM=0.65）を保存
 
 ---
 
 ### 🕑 Week 2 — SoTA (ResEmoteNet) 再現
-- [ ] augmentation なしで ResEmoteNet を再学習
-- [ ] 評価（Macro-F1, Accuracy, confusion matrix）
-- [ ] 自作モデルとの初期比較表を作成（同条件比較）
+- [x] augmentation なしで ResEmoteNet を再学習
+- [x] 評価（Macro-F1, Accuracy, confusion matrix）
+- [x] 自作モデルとの初期比較表を作成（同条件比較）
 
 ---
 
 ### 🕒 Week 3 — 改良案①（構造・正規化）
-- [ ] Transformer に Learnable Positional Encoding を追加
-- [ ] CNN に BatchNorm、Transformer に LayerNorm を導入
-- [ ] Label Smoothing (ε=0.1) 導入
-- [ ] 各構成で 3-seed 実験を実施 → 平均と標準偏差を算出
+- [ ] CNN の改良（ResNet の使用）
+- [ ] Transformer の改良
+- [ ] CNN と Transformer のハイブリット
+- [ ] 各構成で 5-seed 実験を実施 → 平均と標準偏差を算出
 
 ---
 
