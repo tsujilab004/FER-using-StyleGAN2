@@ -1,5 +1,5 @@
 # 🎯 Facial Expression Recognition using StyleGAN2 - Classification Improvement Plan
-**期間:** 2025/11/10 ～ 2026/01/10（約8週間）  
+**期間:** 2025/11/10 ～ 2026/01/5 
 **目的:** pSp Encoder で得た W⁺ 潜在特徴からの表情分類モデル（CNN / Transformer）を改善し、Macro-F1 > 0.70 を目標にする。  
 **比較対象:** ResEmoteNet (SoTA, augmentationなし)
 
@@ -16,7 +16,7 @@
 ## 📅 B. 8週間スケジュール（タスク別）
 
 ### 🕐 Week 1 — セットアップ・再現性基盤
-- [ ] AffectNet-HQ（8:2 split）の前処理統一（リサイズ・正規化・ラベルマップ）
+- [✅] AffectNet-HQ（7:1:2 split）の前処理統一（リサイズ・正規化・ラベルマップ）
 - [ ] ResEmoteNet リポジトリをクローン・依存関係整備  
   - [ ] GitHub実装の動作確認（デモスクリプト実行）
   - [ ] 自データセットへの入力適合（同一前処理）
