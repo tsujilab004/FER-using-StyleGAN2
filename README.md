@@ -34,13 +34,17 @@
 
 ### 🕒 Week 3 — 改良案①（構造・正規化）
 - [ ] CNN の改良（ResNet の使用）
+
+---
+
+### 🕒 Week 4 — 改良案②（構造・正規化）
+- [ ] CNN に Attenotion 機構の導入
 - [ ] Transformer の改良
-- [ ] CNN と Transformer のハイブリット
 - [ ] 各構成で 5-seed 実験を実施 → 平均と標準偏差を算出
 
 ---
 
-### 🕓 Week 4 — 改良案②（学習制御・正則化）
+### 🕓 Week 5 — 改良案②（学習制御・正則化）
 - [ ] Optimizer を AdamW に変更、Scheduler を CosineAnnealing に
 - [ ] 学習率スイープ（1e-3～3e-5）、weight decay, dropout の最適化
 - [ ] Focal Loss (γ=2) の比較実験
